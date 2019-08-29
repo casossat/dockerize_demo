@@ -1,3 +1,4 @@
 node_modules/
 postgres95/
 sabios_apps.sql
+package-lock.json
