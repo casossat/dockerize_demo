@@ -1,0 +1,22 @@
+version: "3"
+services:
+  app:
+    build: .
+    depends_on:
+      - db
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+    environment:
+      DATABASE_URL: postgres://django:django@postgres:5432/sabios_apps
+  db:
+    image: postgres:9.5.19
+    environment: 
+      POSTGRES_USER: django
+      POSTGRES_PASSWORD: django
+      POSTGRES_DB: sabios_apps
+    volumes:
+      - /home/sofhouse/Documentos/test/postgres95:/var/lib/postgresql/data
+    ports:
+      - "5430:5432"
