@@ -10,7 +10,7 @@
     "express": "~4.13.1",
     "body-parser": "^1.5.1",
     "pg": "^7.12.1",
-    "sequelize": "^4.42.0"
+    "sequelize": "^5.15.1"
   },
   "author": "",
   "license": "ISC"
